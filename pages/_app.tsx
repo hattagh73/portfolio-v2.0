@@ -12,7 +12,7 @@ import { Poppins } from '@next/font/google';
 import localFont from '@next/font/local';
 
 const poppins = Poppins({
-    weight: ['400', '500', '600'],
+    weight: ['300', '400', '500', '600'],
     style: ['normal', 'italic'],
     subsets: ['latin'],
 });
@@ -22,21 +22,37 @@ const quiche = localFont({
         {
             path: '../public/fonts/Fontspring-DEMO-quichesans-bold.otf',
             weight: '700'
+        },
+        {
+            path: '../public/fonts/Fontspring-DEMO-quichesans-extrabold.otf',
+            weight: '800'
         }
     ],
     variable: '--font-quiche'
 });
 
+const grandis = localFont({ 
+    src: [
+        {
+            path: '../public/fonts/GrandisExtended-Bold.woff2',
+            weight: '700'
+        },
+    ],
+    variable: '--font-grandis'
+});
+
 const App = ({ Component, pageProps}: AppProps) => {
-    console.log('the fonts', quiche)
+    // console.log('the fonts', quiche)
     return (
         <>
             <style jsx global>{`
                 :root {
                     --quiche-font: ${quiche.style.fontFamily};
+                    --poppins-font: ${poppins.style.fontFamily};
+                    --grandis-font: ${grandis.style.fontFamily};
                 }
             `}</style>
-            <main className={`${poppins.className} relative z-[1]`}>
+            <main className={`font-primary relative z-[1]`}>
                 <Layout>
                     <Component {...pageProps} />
                 </Layout>
