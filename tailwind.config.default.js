@@ -1,3 +1,5 @@
+//* To get this file, run this command: npx tailwindcss init -full
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],
