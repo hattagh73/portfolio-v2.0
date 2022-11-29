@@ -1,5 +1,8 @@
-import classNames from 'classnames';
 import { NextPage } from 'next';
+
+import { SAbout, SHero, SProject, SSkill, } from '../components/components';
+
+import classNames from 'classnames';
 
 const Home:NextPage = () => {
 
@@ -8,21 +11,10 @@ const Home:NextPage = () => {
             {/* Header */}
             
             <main>
-                
-                {/* START Section */}
-                {   [1,2,3].map(i =>
-                    <section 
-                        key={i}
-                        className={classNames(
-                            'h-screen',
-                            {'h-[50vh] border':i === 1}
-                        )}
-                    >
-                    {i}
-                    </section>
-                )}
-
-                
+                <SHero />
+                <SAbout />
+                <SSkill />
+                <SProject />
             </main>
 
             {/* Footer */}

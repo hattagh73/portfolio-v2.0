@@ -7,7 +7,9 @@ tailwindConfig = {
     ],
     theme: {
         extend: {
-
+            fontSize: {
+                '10xl': ['10rem', { lineHeight: '1' }],
+            },
         },
     },
     plugins: [],
