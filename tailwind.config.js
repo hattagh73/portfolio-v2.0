@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 /** @type { import('tailwindcss').Config } */
 
 tailwindConfig = {
@@ -7,6 +9,9 @@ tailwindConfig = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                secondary: ['var(--quiche-font)', ...fontFamily.sans],
+            },
             fontSize: {
                 '10xl': ['10rem', { lineHeight: '1' }],
             },
