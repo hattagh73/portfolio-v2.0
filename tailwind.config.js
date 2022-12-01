@@ -10,11 +10,17 @@ tailwindConfig = {
     theme: {
         extend: {
             fontFamily: {
-                secondary: ['var(--quiche-font)', ...fontFamily.sans],
+                inter: ['var(--inter-font)', ...fontFamily.sans],
+                quiche: ['var(--quiche-font)', ...fontFamily.sans],
+                clashDisplay: ['var(--clashDisplay-font)', ...fontFamily.sans],
+                satoshi: ['var(--satoshi-font)', ...fontFamily.sans],
             },
             fontSize: {
                 '10xl': ['10rem', { lineHeight: '1' }],
             },
+            screens: {
+                '2xl': '1537px',
+            }
         },
     },
     plugins: [],
