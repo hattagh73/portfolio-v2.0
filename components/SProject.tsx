@@ -1,8 +1,15 @@
+import classNames from 'classnames';
+
 const SProject = () => {
     return (
-        <section className="h-screen">
+        <section id="project" className="h-screen">
             
-            <div className="max-w-screen-2xl px-6 md:mx-auto">
+            <div 
+                className={classNames(
+                    "max-w-screen-2xl mx-6 2xl:mx-auto",
+                    "border"
+                )}
+            >
                 <p>This is a SProject Section</p>
             </div>
             
