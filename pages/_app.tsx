@@ -81,7 +81,6 @@ const satoshi = localFont({
     preload: false
 })
 
-
 const App = ({ Component, pageProps}: AppProps) => {
     // console.log('the fonts', quiche)
     return (
@@ -97,8 +96,9 @@ const App = ({ Component, pageProps}: AppProps) => {
                 }
                 html {
                     scroll-behavior: smooth;
-                    // font-family: ${inter.style.fontFamily}
-                    font-family: ${satoshi.style.fontFamily}
+                    // font-family: ${inter.style.fontFamily};
+                    font-family: ${satoshi.style.fontFamily};
+                    color: #262626;
                 }
             `}</style>
             
