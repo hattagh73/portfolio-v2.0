@@ -81,7 +81,21 @@ const Header = () => {
                                     "md:text-base md:font-normal",
                                     {"md:hidden":i === "Home"},
                                 )}
-                            ><Link href={`#${i.toLowerCase()}`} scroll={false}>{i}</Link>
+                            >
+                                { i === "Home" ? 
+                                    (
+                                        <Link 
+                                            href="/"
+                                        >{i}
+                                        </Link>
+                                    ) : (
+                                        <Link 
+                                            href={`#${i.toLowerCase()}`} 
+                                            scroll={false}
+                                        >{i}
+                                        </Link>
+                                    )
+                                }
                             </li>
                         )
                     }
@@ -92,6 +106,7 @@ const Header = () => {
                     {/* <p className="lowercase border py-[0.18rem] px-3 rounded">Learn more</p> */}
                     { soc_links.map((i,index) =>
                         <li 
+                            key={index}
                             className={classNames(
                                 "bg-lime-100 p-2 rounded-full",
                                 "shadow-transparent transition duration-300 ease-linear",
