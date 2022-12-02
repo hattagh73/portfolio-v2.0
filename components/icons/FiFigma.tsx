@@ -7,10 +7,10 @@ interface iProps {
 const FiFigma = ({className}:iProps) => {
     return (
         <svg 
-            className={`text-lg stroke-black ${className}`}
+            className={`text-lg stroke-clr-text-primary ${className}`}
             stroke="currentColor" 
             fill="none" 
-            strokeWidth="2" 
+            strokeWidth="1.7" 
             viewBox="0 0 24 24" 
             strokeLinecap="round" 
             strokeLinejoin="round" 
