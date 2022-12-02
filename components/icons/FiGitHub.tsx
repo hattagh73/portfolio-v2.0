@@ -7,7 +7,7 @@ interface iProps {
 const FiGitHub = ({className}:iProps) => {
     return (
         <svg 
-            className={`text-lg stroke-black ${className}`}
+            className={`text-lg stroke-clr-text-primary ${className}`}
             stroke="currentColor" 
             fill="none" 
             strokeWidth="2" 
