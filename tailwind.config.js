@@ -9,6 +9,9 @@ tailwindConfig = {
     ],
     theme: {
         extend: {
+            colors: {
+                'clr-text-primary': '#262626',
+            },
             fontFamily: {
                 inter: ['var(--inter-font)', ...fontFamily.sans],
                 quiche: ['var(--quiche-font)', ...fontFamily.sans],
