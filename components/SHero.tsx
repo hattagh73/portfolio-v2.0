@@ -6,9 +6,9 @@ const SHero = () => {
         <section 
             id="home" 
             className={classNames(
-                "bg-lime-100",
+                "bg-lime-200",
                 // "pt-4",
-                "md:pt-20 md:bg-transparent",
+                "md:pt-20 md:bg-transparent md:pb-32",
             )}
         >
             
@@ -23,41 +23,48 @@ const SHero = () => {
                     className={classNames(
                         "rounded-lg flex flex-col",
                         "py-6", //! Mobile
-                        "md:bg-lime-100 md:px-6 md:py-28 text-[#262626] md:place-items-center",
+                        "md:bg-lime-200 md:px-6 md:py-28 text-[#262626] md:place-items-center",
                     )}
                 >
-                    {/* Hi */}
-                    {/* <p className="text-[#666666]">hi there! 👋</p> */}
+                    {/* START Hi */}
                     <p className="">hi there! 👋</p>
                     
                     {/* Welcome */}
                     <h1 
-                        className="text-5xl md:text-center md:text-6xl font-extrabold font-quiche max-w-screen-sm"
-                    >Welcome to my <span className="text-red-600">Personal <span className="">Portfolio</span></span>
+                        className="text-5xl md:text-center md:text-6xl font-extrabold font-quiche max-w-screen-sm line"
+                    >Welcome to my <span className="text-rose-700">Personal Portfolio</span>
                     </h1>
                     
-                    
-                    {/* Quote Explore */}
+                    {/* START Quote */}
                     <div className="my-14">
                         <p 
                             className="text-2xl md:text-center"
-                            // contentEditable="true"
-                        >Exploring the digital world on multi-platform mainly in design
+                        >“Exploring the digital world on multi-platform mainly in design”
                         </p>
                     </div>
                     
-                    {/* Learn more */}
-                    <div>
-                        <Link 
-                            className={classNames(
-                                "px-10 py-3 rounded-full cursor-pointer inline-flex",
-                                "border border-black/10",
-                                "shadow-transparent transition duration-300 ease-linear",
-                                "hover:shadow-lg"
-                            )}
-                            href="#about" 
-                            scroll={false}
-                        >Learn More
+                    {/* START Learn More */}
+                    <div 
+                        className={classNames(
+                            "relative self-baseline md:self-center",
+                            // doodle-left
+                            "before:hidden md:before:block before:absolute before:z-10 before:content-[''] before:w-1/6 before:-left-14 before:top-0 before:h-full",
+                            "before:bg-[url('../public/imgs/3-lines-left.svg')] before:bg-no-repeat before:bg-contain before:bg-center",
+                            // doodle-right
+                            "after:hidden md:after:block after:absolute before:z-10 before:content-[''] after:w-1/6 after:-right-14 after:top-0 after:h-full",
+                            "after:bg-[url('../public/imgs/3-lines-right.svg')] after:bg-no-repeat after:bg-contain after:bg-center"
+                        )}
+                    >
+                        {/* btn-learn-more */}
+                        <Link href="#about" scroll={false}>
+                            <button 
+                                className={classNames(
+                                    "border border-black/10 px-10 py-3 rounded-full cursor-pointer",
+                                    "shadow-transparent transition duration-300 ease-linear",
+                                    "hover:shadow-lg",
+                                )}
+                            >Learn More 
+                            </button>
                         </Link>
                     </div>
 
