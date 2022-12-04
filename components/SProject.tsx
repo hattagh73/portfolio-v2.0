@@ -10,7 +10,7 @@ const SProject = () => {
                     "border"
                 )}
             >
-                <p>This is a SProject Section</p>
+                <p>This is a Project section</p>
             </div>
             
         </section>

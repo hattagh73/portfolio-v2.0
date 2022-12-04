@@ -23,7 +23,7 @@ const SHero = () => {
                     className={classNames(
                         "rounded-lg flex flex-col",
                         "py-6", //! Mobile
-                        "md:bg-lime-200 md:px-6 md:py-28 text-[#262626] md:place-items-center",
+                        "md:bg-clr-bg-secondary md:px-6 md:py-28 md:place-items-center",
                     )}
                 >
                     {/* START Hi */}
@@ -59,9 +59,9 @@ const SHero = () => {
                         <Link href="#about" scroll={false}>
                             <button 
                                 className={classNames(
-                                    "border border-black/10 px-10 py-3 rounded-full cursor-pointer",
-                                    "shadow-transparent transition duration-300 ease-linear",
-                                    "hover:shadow-lg",
+                                    "border-2 border-clr-text-primary px-10 py-3 rounded-full cursor-pointer font-medium",
+                                    "shadow-none transition duration-300 ease-linear",
+                                    "hover:shadow-xl",
                                 )}
                             >Learn More 
                             </button>

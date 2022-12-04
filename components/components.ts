@@ -11,4 +11,3 @@ export { default as  SProject} from './SProject';
 //* Import Icon/ Img Components
 export { default as FiFigma } from './icons/FiFigma';
 export { default as FiGitHub } from './icons/FiGitHub';
-export { default as Paint } from './icons/Paint';

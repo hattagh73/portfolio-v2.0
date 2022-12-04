@@ -39,7 +39,7 @@ const Header = () => {
         <header 
             className={classNames(
                 "cursor-default fixed w-full bottom-0 z-10",
-                "md:bottom-auto md:top-0 md:bg-[white]",
+                "md:bottom-auto md:top-0 md:bg-clr-bg-primary",
                 {"shadow border-none": header},
                 // {"md:bg-lime-50": !header},
             )}
@@ -108,7 +108,7 @@ const Header = () => {
                         <li 
                             key={index}
                             className={classNames(
-                                "bg-lime-100 p-2 rounded-full",
+                                "bg-clr-bg-secondary p-2 rounded-full",
                                 "shadow-transparent transition duration-300 ease-linear",
                                 "hover:shadow-lg"
                             )}
