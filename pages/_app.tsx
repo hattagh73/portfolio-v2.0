@@ -98,7 +98,6 @@ const App = ({ Component, pageProps}: AppProps) => {
                     scroll-behavior: smooth;
                     // font-family: ${inter.style.fontFamily};
                     font-family: ${satoshi.style.fontFamily};
-                    color: #262626;
                 }
             `}</style>
             
