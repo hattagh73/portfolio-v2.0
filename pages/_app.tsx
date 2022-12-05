@@ -74,6 +74,11 @@ const satoshi = localFont({
             path: '../public/fonts/Satoshi-Medium.otf',
             weight: '500',
             style: 'normal'
+        },
+        {
+            path: '../public/fonts/Satoshi-Bold.otf',
+            weight: '700',
+            style: 'normal'
         }
     ],
     variable: '--font-satoshi',
@@ -95,8 +100,6 @@ const App = ({ Component, pageProps}: AppProps) => {
                     --satoshi-font: ${satoshi.style.fontFamily};
                 }
                 html {
-                    scroll-behavior: smooth;
-                    // font-family: ${inter.style.fontFamily};
                     font-family: ${satoshi.style.fontFamily};
                 }
             `}</style>
