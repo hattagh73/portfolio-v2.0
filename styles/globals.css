@@ -4,6 +4,6 @@
 
 @layer base {
     html {
-        @apply bg-clr-bg-primary text-clr-text-primary
+        @apply bg-clr-bg-primary text-clr-text-primary scroll-smooth;
     }
 }
