@@ -11,3 +11,7 @@ export { default as  SProject} from './SProject';
 //* Import Icon/ Img Components
 export { default as FiFigma } from './icons/FiFigma';
 export { default as FiGitHub } from './icons/FiGitHub';
+
+//* Import Reusable Component
+export { default as  Logo} from './Logo';
+export { default as  SocialListIcon} from './SocialListIcon';
