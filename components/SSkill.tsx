@@ -90,17 +90,21 @@ const SSkill = () => {
                 <p>my skill! 🚀</p>
                 <h1
                     className={classNames(
-                        "font-quiche text-5xl font-bold lg:max-w-[60%]"
+                        "font-quiche font-bold",
+                        "text-4xl",
+                        "lg:text-5xl lg:max-w-[60%]"
                     )}
                 >These are my familiar skill set</h1>
                 <p
                     className={classNames(
                         "mt-7",
-                        "text-clr-text-primary/60",
+                        "text-clr-text-primary/70",
                         "md:max-w-[60%] md:mt-14"
                     )}
                 >Currently learning some of these technology and improving my skills in <span className="italic">web design</span>,
-                <span className="italic"> frontend</span> and any related to the area of web development</p>
+                    <span className="italic"> frontend</span> and any related to the area of web development
+                </p>
+
             </div>{/* END col-1 */}
 
             {/* START col-2 */}
@@ -132,8 +136,9 @@ const SSkill = () => {
                                     alt="Technology skill icon in web development"
                                     src={i.icon}
                                     fill
-                                    className="drop-shadow-xl group-hover/parent:-translate-y-2 transition duration-300 ease-linear"
+                                    className="absolute drop-shadow-xl group-hover/parent:-translate-y-2 transition duration-300 ease-linear"
                                     sizes="(max-width: 768px) 100vw,(max-width: 1200px) 20vw"
+                                    priority
                                     // width="80"
                                     // height="80"
                                 />
@@ -141,7 +146,7 @@ const SSkill = () => {
                             
                             <p 
                                 className={classNames(
-                                    "mt-2 text-sm font-normal text-clr-text-primary/60",
+                                    "mt-2 text-sm font-normal text-clr-text-primary/70",
                                     "transition duration-300 ease-linear",
                                     "group-hover/parent:text-clr-text-primary",
                                 )}
