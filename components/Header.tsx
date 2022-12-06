@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { useState, useEffect } from 'react';
 
-import { FiFigma, FiGitHub } from './components';
+import { Logo, SocialListIcon } from './components';
 
 import classNames from 'classnames';
 
@@ -24,17 +24,6 @@ const Header = () => {
 
     const router = useRouter();
 
-    const soc_links = [
-        {
-            icon: <FiFigma />,
-            to: 'https://www.figma.com/@hattalimited'
-        },
-        {
-            icon: <FiGitHub />,
-            to: 'https://github.com/hattagh73'
-        }
-    ]
-
     return (
         <header 
             className={classNames(
@@ -52,33 +41,23 @@ const Header = () => {
             >
                 {/* Col 1 - Logo */}
                 <div className="hidden md:flex md:items-center">
-                    <p><Link href={`/`}>Logo</Link></p>
-
-                    {/* If use useRouter */}
-                    {/* <p
-                        onClick={() => {
-                            router.push({
-                                pathname: "/",
-                            })
-                        }}
-                    >Home
-                    </p> */}
+                    <Logo />
                 </div>
                 
-
                 {/* Col 2 - Links */}
                 <ul 
                     className={classNames(
                         "w-full flex place-content-around border border-black/5 bg-white shadow-lg rounded-full px-4 py-2", 
-                        "md:w-fit md:place-content-stretch md:self-center md:gap-x-10 md:border-none md:shadow-none md:bg-transparent md:py-0"
+                        "md:w-fit md:place-content-stretch md:self-center md:gap-x-5 md:border-none md:shadow-none md:bg-transparent md:py-0"
                     )}
                 >
                     {   ['Home', 'About', 'Skill', 'Project'].map((i, index) => 
                             <li
                                 key={index}
                                 className={classNames(
-                                    "text-sm font-medium lowercase",
+                                    "text-sm font-medium lowercase transition duration-200 ease-linear",
                                     "md:text-base md:font-normal",
+                                    "md:hover:bg-clr-bg-secondary md:rounded-md md:px-[0.40rem] md:py-[0.10rem]",
                                     {"md:hidden":i === "Home"},
                                 )}
                             >
@@ -102,21 +81,10 @@ const Header = () => {
                 </ul>
                 
                 {/* Col 3 - Social */}
-                <ul className="hidden md:flex md:items-center md:gap-x-3">
-                    {/* <p className="lowercase border py-[0.18rem] px-3 rounded">Learn more</p> */}
-                    { soc_links.map((i,index) =>
-                        <li 
-                            key={index}
-                            className={classNames(
-                                "bg-clr-bg-secondary p-2 rounded-full",
-                                "shadow-transparent transition duration-300 ease-linear",
-                                "hover:shadow-lg"
-                            )}
-                        >
-                            <a href={i.to} target="_blank">{i.icon}</a>
-                        </li>
-                    )}
-                </ul>
+                <SocialListIcon 
+                    ul_className="hidden md:flex md:items-center md:gap-x-1"
+                    li_className="border border-clr-text-primary/10 p-1 rounded"
+                />
 
             </nav>
         </header>

@@ -1,4 +1,4 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
+// const { fontFamily } = require('tailwindcss/defaultTheme');
 
 /** @type { import('tailwindcss').Config } */
 
@@ -6,7 +6,7 @@ tailwindConfig = {
     content: [
         "./pages/**/*.{js,ts,jsx,tsx}",
         "./components/**/*.{js,ts,jsx,tsx}",
-        "./styles/**/*.{css}"
+        "./styles/**/*.css"
     ],
     theme: {
         extend: {
@@ -17,10 +17,9 @@ tailwindConfig = {
                 'clr-bg-secondary': '#face67'
             },
             fontFamily: {
-                inter: ['var(--inter-font)', ...fontFamily.sans],
-                quiche: ['var(--quiche-font)', ...fontFamily.sans],
-                clashDisplay: ['var(--clashDisplay-font)', ...fontFamily.sans],
-                satoshi: ['var(--satoshi-font)', ...fontFamily.sans],
+                quiche: ['Quichesans', 'cursive'],
+                satoshi: ['Satoshi', 'sans-serif'],
+                // satoshi: ['var(--satoshi-font)', ...fontFamily.sans],
             },
             fontSize: {
                 '10xl': ['10rem', { lineHeight: '1' }],

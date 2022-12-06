@@ -6,9 +6,9 @@ const SHero = () => {
         <section 
             id="home" 
             className={classNames(
-                "bg-lime-200",
+                "bg-clr-bg-secondary",
                 // "pt-4",
-                "md:pt-20 md:bg-transparent md:pb-32",
+                "md:pt-32 md:bg-transparent md:pb-20",
             )}
         >
             
@@ -22,28 +22,36 @@ const SHero = () => {
                 <div
                     className={classNames(
                         "rounded-lg flex flex-col",
-                        "py-6", //! Mobile
-                        "md:bg-clr-bg-secondary md:px-6 md:py-28 md:place-items-center",
+                        "py-16", //! Mobile
+                        "md:px-6 md:py-28 md:place-items-center",
+                        "md:bg-gradient-to-r from-clr-bg-secondary to-clr-bg-secondary/90"
                     )}
                 >
-                    {/* START Hi */}
+                    {/* Hi */}
                     <p className="">hi there! 👋</p>
                     
                     {/* Welcome */}
                     <h1 
-                        className="text-5xl md:text-center md:text-6xl font-extrabold font-quiche max-w-screen-sm line"
-                    >Welcome to my <span className="text-rose-700">Personal Portfolio</span>
+                        className={classNames(
+                            "font-extrabold font-quiche text-4xl max-w-[70%]",
+                            "sm:text-6xl",
+                            "md:text-center md:max-w-[80%]",
+                            "lg:max-w-[70%]",
+                            "xl:max-w-[50%]",
+                            "2xl:max-w-[40%]"
+                        )}
+                    >Welcome to my <span className="">personal portfolio</span>
                     </h1>
                     
-                    {/* START Quote */}
-                    <div className="my-14">
-                        <p 
-                            className="text-2xl md:text-center"
-                        >“Exploring the digital world on multi-platform mainly in design”
-                        </p>
-                    </div>
+                    {/* Quote */}
                     
-                    {/* START Learn More */}
+                    <p 
+                        className="my-10 lg:my-14 text-xl md:text-xl md:text-center"
+                    >Exploring the digital world on multi-platform mainly in design
+                    </p>
+                    
+                    
+                    {/* Learn More */}
                     <div 
                         className={classNames(
                             "relative self-baseline md:self-center",
