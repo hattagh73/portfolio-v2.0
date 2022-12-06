@@ -3,7 +3,46 @@
 @tailwind utilities;
 
 @layer base {
+    @font-face {
+        font-family: 'Satoshi';
+        font-weight: 300;
+        src: url('/fonts/Satoshi-Light.otf');
+    }
+    @font-face {
+        font-family: 'Satoshi';
+        font-weight: 400;
+        src: url('/fonts/Satoshi-Regular.otf');
+    }
+    @font-face {
+        font-family: 'Satoshi';
+        font-weight: 500;
+        src: url('/fonts/Satoshi-Medium.otf');
+    }
+    @font-face {
+        font-family: 'Satoshi';
+        font-weight: 700;
+        src: url('/fonts/Satoshi-Bold.otf');
+    }
+    @font-face {
+        font-family: 'Quichesans';
+        font-weight: 500;
+        src: url('/fonts/Quichesans-Medium.otf');
+    }
+    @font-face {
+        font-family: 'Quichesans';
+        font-weight: 700;
+        src: url('/fonts/Quichesans-Bold.otf');
+    }
+    @font-face {
+        font-family: 'Quichesans';
+        font-weight: 800;
+        src: url('/fonts/Quichesans-ExtraBold.otf');
+    }
+    /* HTML Default
+        *background-color
+        *text-color
+    */
     html {
-        @apply bg-clr-bg-primary text-clr-text-primary scroll-smooth;
+        @apply bg-clr-bg-primary text-clr-text-primary scroll-smooth font-satoshi;
     }
 }
