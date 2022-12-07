@@ -12,7 +12,7 @@ Here is the table of contents of our project. You may want use it to explore the
 - [Table Of Contents](#-table-of-contents)
 - [About Project](#-about-project)
 - [Technology Stack](#-technology-stack)
- <!-- - [Screenshots](#-screenshots) -->
+- [Screenshots](#-screenshots) 
  <!-- - [References](#-references) -->
 
 <a align="right" href="#-project-title">
@@ -53,12 +53,12 @@ A list of **technology stack** that we applied in this project. There are as lis
 </p>
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nextjs,tailwind" />
+    <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind" />
   </a>
 </p>
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=vscode" />
+    <img src="https://skillicons.dev/icons?i=figma,vscode" />
   </a>
 </p>
 
@@ -68,19 +68,22 @@ A list of **technology stack** that we applied in this project. There are as lis
 <br />
 <!-- END Technology Stack -->
 
-<!-- START Screenshots 
+<!-- START Screenshots -->
 ## 📸 Screenshots
-Here are some of the screenshot outputs of the project. (**WORK IN PROGRESS**)
+Some screenshot of our project.
 
-<img width="580" alt="Image results" src="https://user-images.githubusercontent.com/92319348/203851239-7b1ededc-363a-4ca0-8746-69c162eaeccf.jpg">
-<img width="580" alt="Image results" src="https://user-images.githubusercontent.com/92319348/204151896-0e0463f6-5d43-45bd-b058-478cac3c8c3b.jpg">
+**Current design of Hero Section** <br /><br />
+<img width="580" alt="Image results" src="https://user-images.githubusercontent.com/92319348/206236233-1dde4974-4fef-46e5-b860-c86104d40c32.jpg">
+
+**Future design of Hero Section** <br /><br />
+<img width="580" alt="Image results" src="https://user-images.githubusercontent.com/92319348/206236326-da3425cc-dc1c-4935-91ac-8ec4d7cbae83.jpg">
 
 <a align="right" href="#-project-title">
   <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
 </a>
 
 <br />
-END Screenshots -->
+<!-- END Screenshots -->
 
 <!-- START References
 ## 🔎 References
