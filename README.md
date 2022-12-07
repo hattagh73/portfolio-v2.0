@@ -26,15 +26,31 @@ Here is the table of contents of our project. You may want use it to explore the
 In this project we're developing a landing page of our personal portfolio with a new look, style and design.
 
 What we have done in the recent times:
-* [x] Design and create a header component with navigation for both mobile and desktop view.
-* [x] Design and create a hero section component.
-* [X] Design and create an about section component.
-* [X] Design and create a skill section component.
-* [X] Design and create a project section component.
-* [X] Design and create both footer and footnote section component.
-* [x] Manually store images via Cloudinary and use it in the index page.
-* [x] Add some typescripts in page and components.
-* [x] Add smooth scroll from section to section.
+
+1. **Header component**
+   * [x] Design and create a header component. 
+   * [x] Create a navigation for both mobile and desktop view.
+
+2. **Hero component**
+   * [x] Design and create a hero section.
+
+3. **About component**
+   * [X] Design and create an about section.
+
+4. **Skill component**
+   * [X] Design and create a skill section.
+
+5. **Project component**
+   * [X] Design and create a project section.
+
+6. **Footer component**
+   * [X] Design and create both footer section.
+   * [X] Create a footnote inside footer section that include color gradient.
+   
+7. **Others**
+   * [x] Manually store images via [Cloudinary](https://cloudinary.com/) and use it in the project.
+   * [x] Add some typescript in page and components.
+   * [x] Add smooth scroll from section to section.
 
 <a align="right" href="#-project-title">
   <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
