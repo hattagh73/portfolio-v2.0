@@ -88,11 +88,11 @@ A list of **technology stack** that we applied in this project. There are as lis
 ## 📸 Screenshots
 Some screenshot of our project.
 
-**Current design of Hero Section** <br /><br />
-<img width="580" alt="Image results" src="https://user-images.githubusercontent.com/92319348/206236233-1dde4974-4fef-46e5-b860-c86104d40c32.jpg">
+**Hero Section • Current Design**
+<img alt="Image results" src="https://user-images.githubusercontent.com/92319348/206236233-1dde4974-4fef-46e5-b860-c86104d40c32.jpg">
 
-**Future design of Hero Section** <br /><br />
-<img width="580" alt="Image results" src="https://user-images.githubusercontent.com/92319348/206236326-da3425cc-dc1c-4935-91ac-8ec4d7cbae83.jpg">
+**Hero Section • Future Design**
+<img alt="Image results" src="https://user-images.githubusercontent.com/92319348/206236326-da3425cc-dc1c-4935-91ac-8ec4d7cbae83.jpg">
 
 <a align="right" href="#-project-title">
   <img align="right" width="16" src="https://user-images.githubusercontent.com/92319348/202473243-8f547c67-ab8a-4fb1-821e-75e83ff6b097.png" />
