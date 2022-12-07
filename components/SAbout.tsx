@@ -1,28 +1,11 @@
-import classNames from 'classnames';
+import { interest } from '../local-data';
+
 import Image from 'next/image';
 
-const SAbout = () => {
+import classNames from 'classnames';
 
-    const interest = [
-        {
-            id: 1,
-            title: 'Design',
-            pt: 'Improving my web design skill',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1670215678/icons/npqxde3b98uxeeg99lla.png'
-        },
-        {
-            id: 2,
-            title: 'Code',
-            pt: 'Learning web app programming',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1670215678/icons/gbzlxwspmj9tif5cu6l3.png'
-        },
-        {
-            id: 3,
-            title: 'QA',
-            pt: `Checking systems' user experience`,
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1670215733/icons/faemsczzlhaszb3jt2ov.png'
-        },
-    ]
+
+const SAbout = () => {
 
     return (
         <section 
@@ -34,7 +17,7 @@ const SAbout = () => {
                 "grid",
                 "grid-cols-1 gap-y-7",
                 "md:grid-cols-2",
-                ""
+                "border border-blue-900"
             )}
         >
             {/* START COL about-title-img */}

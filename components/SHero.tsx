@@ -8,7 +8,8 @@ const SHero = () => {
             className={classNames(
                 "bg-clr-bg-secondary",
                 // "pt-4",
-                "md:pt-32 md:bg-transparent md:pb-20",
+                "md:pt-28 md:bg-transparent md:pb-20",
+                "border border-blue-900"
             )}
         >
             

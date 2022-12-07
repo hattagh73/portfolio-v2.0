@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import { useState, useEffect } from 'react';
@@ -21,8 +20,6 @@ const Header = () => {
 
         return () => window.removeEventListener('scroll', headerScrollEvent);
     }, [])
-
-    const router = useRouter();
 
     return (
         <header 
@@ -47,7 +44,7 @@ const Header = () => {
                 {/* Col 2 - Links */}
                 <ul 
                     className={classNames(
-                        "w-full flex place-content-around border border-black/5 bg-white shadow-lg rounded-full px-4 py-2", 
+                        "w-full flex place-content-around border border-clr-text-primary/20 bg-clr-bg-primary shadow-xl rounded-full px-4 py-2", 
                         "md:w-fit md:place-content-stretch md:self-center md:gap-x-5 md:border-none md:shadow-none md:bg-transparent md:py-0"
                     )}
                 >
@@ -83,7 +80,7 @@ const Header = () => {
                 {/* Col 3 - Social */}
                 <SocialListIcon 
                     ul_className="hidden md:flex md:items-center md:gap-x-1"
-                    li_className="border border-clr-text-primary/10 p-1 rounded"
+                    li_className="border border-clr-text-primary/10 p-1 rounded hover:bg-clr-bg-secondary"
                 />
 
             </nav>

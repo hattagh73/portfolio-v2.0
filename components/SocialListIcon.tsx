@@ -9,11 +9,11 @@ interface iProps {
 const SocialListIcon = ({ul_className, li_className}:iProps) => {
     const soc_links = [
         {
-            icon: <FiFigma />,
+            id: 1,
             to: 'https://www.figma.com/@hattalimited'
         },
         {
-            icon: <FiGitHub />,
+            id: 2,
             to: 'https://github.com/hattagh73'
         }
     ]
@@ -23,9 +23,9 @@ const SocialListIcon = ({ul_className, li_className}:iProps) => {
             className={ul_className}
         >
             {/* <p className="lowercase border py-[0.18rem] px-3 rounded">Learn more</p> */}
-            { soc_links.map((i,index) =>
+            { soc_links.map(i =>
                 <li 
-                    key={index}
+                    key={i.id}
                     className={classNames(
                         li_className,
                         "transition duration-300 ease-linear inline-flex",
@@ -33,7 +33,15 @@ const SocialListIcon = ({ul_className, li_className}:iProps) => {
                         "shadow-transparent hover:shadow-lg",
                     )}
                 >
-                    <a href={i.to} target="_blank">{i.icon}</a>
+                    <a href={i.to} target="_blank">
+                        {   i.id === 1 ?
+                            (
+                                <FiFigma />
+                            ) : (
+                                <FiGitHub />
+                            )                  
+                        }
+                    </a>
                 </li>
             )}
         </ul>
