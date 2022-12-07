@@ -1,75 +1,9 @@
+import { skills } from '../local-data'; 
+
 import Image from 'next/image';
 import classNames from 'classnames';
 
 const SSkill = () => {
-
-    const skills = [
-        {
-            id: 1,
-            skill: 'Figma',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1667237384/icons/ibdziqncbnwjle0l1axc.svg'
-        },
-        {
-            id: 2,
-            skill: 'HTML',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1667237602/icons/stb3wn5tabkjb8xduqpt.svg'
-        },
-        {
-            id: 3,
-            skill: 'CSS',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1667237602/icons/hzztmpdh8ymsygnn8ogf.svg'
-        },
-        {
-            id: 4,
-            skill: 'SCSS',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1667237602/icons/kxuhzeznvi0di61alkaw.svg'
-        },
-        {
-            id: 5,
-            skill: 'Bootstrap',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1670223477/icons/k2q9a8uxlee9b4y2riro.svg'
-        },
-        {
-            id: 6,
-            skill: 'TailwindCSS',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1670223479/icons/kpymfu6pc6qbstgjruoj.svg'
-        },
-        {
-            id: 7,
-            skill: 'JavaScript',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1670223473/icons/e0n8w6vhoasqylqdo3kg.svg'
-        },
-        {
-            id: 8,
-            skill: 'ReactJS',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1667237602/icons/nwj8o9c9k9qkxkmarczy.svg'
-        },
-        {
-            id: 9,
-            skill: 'NextJS',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1667293231/icons/xkgcutbelbcuml2zxywh.svg'
-        },
-        {
-            id: 10,
-            skill: 'NodeJS',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1670224251/icons/yvmxlf3c3carvdlul33r.svg'
-        },
-        {
-            id: 11,
-            skill: 'ExpressJS',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1670224251/icons/dmpowjilrdvef1s9j9dm.svg'
-        },
-        {
-            id: 12,
-            skill: 'MySQL',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1670225206/icons/rnqcburcaaknt6nfat0s.svg'
-        },
-        {
-            id: 13,
-            skill: 'Cloudinary',
-            icon: 'https://res.cloudinary.com/dltslq5fh/image/upload/v1670224251/icons/gfdvtppwlv6ys1ntqroc.svg'
-        }
-    ]
 
     return (
         <section 
@@ -78,7 +12,8 @@ const SSkill = () => {
                 "max-w-screen-2xl mx-6 2xl:mx-auto",
                 "pt-16 pb-16",
                 "grid",
-                "md:grid-cols-2"
+                "md:grid-cols-2",
+                "border border-blue-900"
             )}>
             
             {/* START col-1 */}
