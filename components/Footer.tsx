@@ -2,7 +2,7 @@ import { ft_links } from '../local-data';
 
 import Link from 'next/link';
 
-import {Logo, SocialListIcon} from './components';
+import {Logo, SocialListIcon, Blob} from './components';
 
 import classNames from 'classnames';
 
@@ -11,10 +11,17 @@ const Footer = () => {
     return (
         <footer 
             className={classNames(
-                "md:pt-10 md:pb-0",
-                ""
+                "pt-10",
+                "md:pt-10",
+                "relative",
+                "border-t-2 border-t-clr-text-primary"
             )}
         >
+            {/* Blob */}
+            <Blob 
+                src="https://res.cloudinary.com/dltslq5fh/image/upload/v1670482754/3d/nsi2bcoqcb3lfmf56afj.png"
+                className="hidden lg:block absolute w-60 h-60 bottom-[8%] left-[43%]"
+            />
             
             {/* START Grid */}
             <div 
@@ -37,10 +44,10 @@ const Footer = () => {
                         )}
                     >Exploring the digital world on multi-platform mainly in design</p>
 
-                    <p className="mt-5 font-medium">Social Links</p>
+                    <p className="mt-7 font-medium">Social Links</p>
 
                     <SocialListIcon 
-                        ul_className="inline-flex gap-x-1 mt-2"
+                        ul_className="inline-flex gap-x-1 mt-4"
                         li_className="border rounded-md p-1 hover:bg-clr-bg-secondary"
                     />
 
@@ -84,6 +91,7 @@ const Footer = () => {
                                     <a
                                         href={link.link} 
                                         target="_blank"
+                                        rel="noreferrer"
                                         className="hover:text-clr-text-primary underline decoration-[2px] decoration-clr-bg-secondary/0 hover:decoration-clr-bg-secondary transition duration-300 ease-linear"
                                     >{link.name}</a>
                                 </li>
@@ -105,7 +113,7 @@ const Footer = () => {
                     className={classNames(
                         "max-w-screen-2xl mx-6 2xl:mx-auto",
                         "mt-8 pb-14 pt-4",
-                        "md:mt-80 md:pb-2 md:pt-4",
+                        "md:mt-96 md:pb-4 md:pt-4",
                         "text-xs text-clr-bg-primary",
                         // "grid",
                         // "grid-cols-1",
@@ -133,7 +141,7 @@ const Footer = () => {
             </div>
             
             {/* show color gradient */}
-            <div className="pt-[0.20rem] bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400" />
+            <div className="h-1 bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400" />
             
         </footer>
     )
