@@ -33,7 +33,7 @@ const SocialListIcon = ({ul_className, li_className}:iProps) => {
                         "shadow-transparent hover:shadow-lg",
                     )}
                 >
-                    <a href={i.to} target="_blank">
+                    <a href={i.to} target="_blank" rel="noreferrer">
                         {   i.id === 1 ?
                             (
                                 <FiFigma />
