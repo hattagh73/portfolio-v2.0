@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import Head from 'next/head';
 
 import { SAbout, SHero, SProject, SSkill, } from '../components/components';
 
@@ -10,9 +9,6 @@ const Home:NextPage = () => {
     return (
         <>
             {/* Head */}
-            <Head>
-                <title>Hatta Portfolio</title>
-            </Head>
 
             {/* Header */}
             
