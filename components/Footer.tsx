@@ -130,7 +130,7 @@ const Footer = () => {
 
                     <li
                         className="order-1"
-                    >Made via <a href="https://nextjs.org/" target="_blank" className="hover:underline decoration-2 decoration-clr-bg-secondary">NextJS</a>
+                    >Made via <a href="https://nextjs.org/" target="_blank" rel="noreferrer" className="hover:underline decoration-2 decoration-clr-bg-secondary">NextJS</a>
                     </li>
 
                     <li
