@@ -44,7 +44,7 @@ const Header = () => {
                 {/* Col 2 - Links */}
                 <ul 
                     className={classNames(
-                        "w-full flex place-content-around border border-clr-text-primary/20 bg-clr-bg-primary shadow-xl rounded-full px-4 py-2", 
+                        "w-full flex place-content-around border border-clr-text-primary/20 bg-clr-bg-primary rounded-full px-4 py-2", /* Mobile view */
                         "md:w-fit md:place-content-stretch md:self-center md:gap-x-5 md:border-none md:shadow-none md:bg-transparent md:py-0"
                     )}
                 >
