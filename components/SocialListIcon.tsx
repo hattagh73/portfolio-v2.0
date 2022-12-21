@@ -10,11 +10,11 @@ const SocialListIcon = ({ul_className, li_className}:iProps) => {
     const soc_links = [
         {
             id: 1,
-            to: 'https://www.figma.com/@hattalimited'
+            to: 'https://www.figma.com/@hattaltd'
         },
         {
             id: 2,
-            to: 'https://github.com/hattagh73'
+            to: 'https://github.com/hattaltd'
         }
     ]
 
